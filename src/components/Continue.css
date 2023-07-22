@@ -1,0 +1,24 @@
+.resetbtn{
+    border: none;
+    border-radius: 0.5rem;
+    background-color: blue;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+    box-shadow: 0px 0px 8px #888;
+    font-family: 'Fredoka', sans-serif;
+    display: block;
+}
+.nbtn{
+    border: none;
+    border-radius: 0.5rem;
+    background-color: blue;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+    box-shadow: 0px 0px 8px #888;
+    font-family: 'Fredoka', sans-serif;
+    display: block;
+}
