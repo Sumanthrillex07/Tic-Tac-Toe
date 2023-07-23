@@ -11,6 +11,7 @@
 * Light mode
 * Restart button
 * Who's turn it is indicator
+* Pop-Up message for the winner
 
 ## How to Play
 #### To play the game, simply click on a cell to place your move. The first player to get three of their marks in a row wins.
