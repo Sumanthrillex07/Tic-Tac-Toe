@@ -6,11 +6,11 @@
 ### Here is the website [link](https://sumanth-tictactoe.netlify.app/).
 
 ## Features
-#### 3x3 Tic Tac Toe game
-#### Dark mode
-#### Light mode
-#### Restart button
-#### Who's turn it is indicator
+* 3x3 Tic Tac Toe game
+* Dark mode
+* Light mode
+* Restart button
+* Who's turn it is indicator
 
 ## How to Play
 #### To play the game, simply click on a cell to place your move. The first player to get three of their marks in a row wins.
