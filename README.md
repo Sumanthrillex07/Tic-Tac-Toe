@@ -3,7 +3,7 @@
 ## A simple Tic Tac Toe game made with React and has dark mode also.
 
 
-### Here is the website [link](https://sumanth-tictactoe.netlify.app/).
+### Here is the website [link](https://tictactoe-dark.netlify.app/).
 
 ## Features
 * 3x3 Tic Tac Toe game
