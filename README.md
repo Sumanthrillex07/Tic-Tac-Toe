@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React Based TIC TAC TOE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here is the website [link](https://sumanth-tictactoe.netlify.app/).
 
 ## Available Scripts
 
