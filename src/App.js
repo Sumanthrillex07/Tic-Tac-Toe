@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
+import Swal from "sweetalert2";
 import { Board } from "./components/Board";
 import { ScoreBoard } from "./components/ScoreBoard";
 import { Continue } from "./components/Continue";
 import DarkMode from "./components/DarkMode/DarkMode";
-import Alert from "./components/Alert";
 
 function App() {
   const Booyah = [
@@ -21,16 +21,7 @@ function App() {
   const [xplay, setxplay] = useState(true);
   const [scores, setScores] = useState({ xScore: 0, oScore: 0 });
   const [gameOver, setgameOver] = useState(false);
-  const [alert, setAlert] = useState(null);
   const [wwin, setwwin] = useState(null);
-  const sAlert = (msg) => {
-    setAlert({
-      msg: msg,
-    });
-    setTimeout(() => {
-      setAlert(null);
-    }, 2000);
-  };
   const handleBoxClick = (boxidx) => {
     const Upboard = board.map((value, idx) => {
       if (idx === boxidx) {
@@ -59,8 +50,13 @@ function App() {
       if (board[x] && board[x] === board[y] && board[y] === board[z]) {
         setgameOver(true);
         setwwin([board[x]]);
-        if (board[x] === "X") sAlert("X won");
-        else sAlert("O Won");
+        Swal.fire({
+          title: board[x]+' won',
+          width: 600,
+          padding: '2em',
+          color: '#716add',
+          background: '#fff',
+        })
         return board[x];
       }
     }
@@ -77,12 +73,10 @@ function App() {
   };
   return (
     <div className="App">
-      <div className="heading">
-        TIC TAC TOE
-       
-      </div>
-      <p className="www">Winner: {wwin} <DarkMode /> </p>
-      <Alert alert={alert} />
+      <div className="heading">TIC TAC TOE</div>
+      <p className="www">
+        Winner: {wwin} <DarkMode />{" "}
+      </p>
       <ScoreBoard scores={scores} xplay={xplay} />
       <Board board={board} onClick={gameOver ? resetBoard : handleBoxClick} />
       <Continue resetBoard={resetBoard} Ngame={Ngame} />

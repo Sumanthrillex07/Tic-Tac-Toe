@@ -31,3 +31,6 @@
     border-bottom: 5px solid transparent;
     
 }
+*{
+    transition: 0s;
+  }
